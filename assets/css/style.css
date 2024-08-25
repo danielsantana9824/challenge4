@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    padding: 35px;
+    border-bottom: 5px solid black;
+}
+
+header nav {
+    flex: 1 0 50%;
+    display: flex;
+}
+
+header ul {
+    display: flex;
+    justify-content: end;
+    width: 100vw;
+}
+
+header li {
+    list-style: none;
+    padding-right: 3%;
+}
+
+nav {
+    display: flex;
+}
