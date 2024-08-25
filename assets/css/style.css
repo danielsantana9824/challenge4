@@ -44,22 +44,16 @@ main {
 }
 
 .left {
-    left: 0;
     border-right: var(--borderLine) solid var(--colorLine);
-    /* background-color: #111; */
 }
 
 .right {
-    right: 0;
-    border-left: var(--borderLine) solid var(--colorLine);
-    /* background-color: red; */
+    padding-left: 0.5%;
 }
 
-.work-items {
-    display: flex;
-    min-width: 80vw;
-    min-height: auto;
-
+.line {
+    height: 100%;
+    border-left: var(--borderLine) solid var(--colorLine);
 }
 
 section a img {
