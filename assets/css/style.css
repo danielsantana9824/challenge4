@@ -52,7 +52,7 @@ main {
 }
 
 .line {
-    height: 100%;
+    padding-left: 0.5%;
     border-left: var(--borderLine) solid var(--colorLine);
 }
 
