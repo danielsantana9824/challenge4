@@ -10,53 +10,56 @@
 </head>
 
 <body>
-    <header>
-        <img id="theme" src="https://static-00.iconduck.com/assets.00/sun-symbol-emoji-1024x1024-ys649vi7.png" 
-        data-sun="https://static-00.iconduck.com/assets.00/sun-symbol-emoji-1024x1024-ys649vi7.png"
-        data-moon="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Weather_icon_-_full_moon.svg/1200px-Weather_icon_-_full_moon.svg.png"   
-        data-status="sun"  
-        alt="">
-       </header>
+    <div class="light">
+        <header>
+            <img onclick="see()" id="theme"
+                src="https://static-00.iconduck.com/assets.00/sun-symbol-emoji-1024x1024-ys649vi7.png"
+                data-sun="https://static-00.iconduck.com/assets.00/sun-symbol-emoji-1024x1024-ys649vi7.png"
+                data-moon="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Weather_icon_-_full_moon.svg/1200px-Weather_icon_-_full_moon.svg.png"
+                data-status="sun" alt="">
+        </header>
 
-    <main>
-        <section class="split left">
+        <main>
+            <section class="split left">
 
-            <a href="#">
-                <img src="assets/images/source.gif" alt="it's no working right now, so sorry">
-            </a>
+                <a href="#">
+                    <img src="assets/images/source.gif" alt="it's no working right now, so sorry">
+                </a>
 
-        </section>
+            </section>
 
-        <section class="split right new">
-            <h1>¿What's on your mind?</h1>
+            <section class="split right new">
+                <h1>¿What's on your mind?</h1>
 
-            <form id="myForm" method="POST">
+                <form id="myForm" method="POST">
 
-                <div class="input-group">
-                    <label for="nameUser">Name</label>
-                    <input type="text" name="nameUser" id="nameUser" placeholder="Name">
-                </div>
+                    <div class="input-group">
+                        <label for="nameUser">Name</label>
+                        <input type="text" name="nameUser" id="nameUser" placeholder="Name">
+                    </div>
 
-                <div class="input-group">
-                    <label for="title">Title</label>
-                    <input type="text" name="title" id="title" placeholder="Title" />
-                </div>
+                    <div class="input-group">
+                        <label for="title">Title</label>
+                        <input type="text" name="title" id="title" placeholder="Title" />
+                    </div>
 
-                <div class="input-group">
-                    <label for="content">Content</label>
-                    <textarea name="content" id="content" placeholder="Content"></textarea>
-                </div>
+                    <div class="input-group">
+                        <label for="content">Content</label>
+                        <textarea name="content" id="content" placeholder="Content"></textarea>
+                    </div>
 
-                <div class="positionButton">
-                <button id="sign-up">Sign Up</button>
+                    <div class="positionButton">
+                        <button id="sign-up">Sign Up</button>
 
-                </div>
-            </form>
-        </section>
-    </main>
+                    </div>
+                </form>
+            </section>
+        </main>
 
-    <footer></footer>
-
+        <!-- <footer></footer> -->
+    </div>
     <script src="./assets/js/form.js"></script>
+    <script src="./assets/js/logic.js"></script>
 </body>
+
 </html>
