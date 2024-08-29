@@ -1,12 +1,85 @@
+:root {
+  --borderLine: 3px;
+  --colorLine: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  padding: 35px;
+  border-bottom: var(--borderLine) solid var(--colorLine);
+}
+
+header nav {
+  flex: 1 0 50%;
+  display: flex;
+}
+
+header ul {
+  display: flex;
+  justify-content: end;
+  width: 100vw;
+}
+
+header li {
+  list-style: none;
+  padding-right: 3%;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  margin-top: 1%;
+  border-top: var(--borderLine) solid var(--colorLine);
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+}
+
+.left {
+  border-right: var(--borderLine) solid var(--colorLine);
+  height: 100%;
+}
+
+.right {
+  padding-left: 0.5%;
+}
+
+.line {
+  padding-left: 0.5%;
+  height: 100%;
+  border-left: var(--borderLine) solid var(--colorLine);
+}
+
+section a img {
+  margin-top: 20%;
+  margin-bottom: 10%;
+  width: 80%;
+  height: auto;
+  padding-left: 5%;
+  border-radius: 5%;
+}
+
+footer {
+  padding-bottom: 1%;
+}
+
 .new {
-    font-size: 100%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 100%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .new h1 {
-    display: flex;
-    margin-left: 30%;
-    margin-top: 20%;
+  display: flex;
+  margin-left: 30%;
+  margin-top: 20%;
 }
 
 .input-group {
@@ -18,7 +91,8 @@ label {
   color: #212121;
 }
 
-input, textarea{
+input,
+textarea {
   background-color: whitesmoke;
   border-radius: 3px;
   border-width: 1px;
@@ -39,25 +113,25 @@ input, textarea{
 }
 
 button {
-    padding-right: 5%;
-    background-color: #001b44;
-    border-radius: 8px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 1.2em;
-    letter-spacing: 0.21px;
-    line-height: 16px;
-    max-width: 255px;
-    padding: 20px 52px;
-    text-align: center;
-    transition-duration: 0.15s;
-    transition-property: background-color;
-    transition-timing-function: linear;
-    margin-top: 0.6em;
-    float: right;
-  }
+  padding-right: 5%;
+  background-color: #001b44;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2em;
+  letter-spacing: 0.21px;
+  line-height: 16px;
+  max-width: 255px;
+  padding: 20px 52px;
+  text-align: center;
+  transition-duration: 0.15s;
+  transition-property: background-color;
+  transition-timing-function: linear;
+  margin-top: 0.6em;
+  float: right;
+}
 
-  .positionButton{
-    display: flex;
-    justify-content: center;
-  }
+.positionButton {
+  display: flex;
+  justify-content: center;
+}

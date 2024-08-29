@@ -19,8 +19,13 @@ signUpButton.addEventListener('click', function (event) {
 
     if (alert) {
         registers.push(register);
+        console.log("registers",registers);
+        
         localStorage.setItem("users", JSON.stringify(registers));
-        window.location.href = "blog.html";
+        document.location.replace("blog.html");
+
+        // window.location.href = "blog.html";
+        // document.location.replace("blog.html");
     }
 });
 
