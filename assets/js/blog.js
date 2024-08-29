@@ -1,30 +1,38 @@
 const section = document.querySelector("section");
-const blogs = JSON.parse(localStorage.getItem("users")) || [];
+const bottomEl = document.getElementById("back");
+const saveButton = document.getElementById('save');
+
+const array = JSON.parse(localStorage.getItem("users"));
 
 function loadBlogs() {
   section.textContent = "";
 
-console.log("blogs",blogs);
+  // const register = {
+  //   nameUser: "a",
+  //   title: "b",
+  //   content: "c"
+  // };
 
+  // array[1] = register;
 
+for (let i = 0; i < array.length; i++) {
 
-  //  first iteration
-  section.innerHTML = `<article>
-                 <h3>${blogs[0].title}</h3>
-                 <hr>
-                 <p class="sentence">${blogs[0].content}</p>
+  console.log("a");
+  
+  section.innerHTML=`<article>
+  <h3>${array[i].title}</h3>
+  <hr>
+  <p class="sentence">${array[i].content}</p>
 
-                 <p>Posted By: <span>${blogs[0].username}</span></p>
-            </article>`
+  <p>Posted By: <span>${array[i].nameUser}</span></p>
+</article>`
+  
+}
 
-  // section.innerHTML += `<article>
-  //                <h3>${blogs[1].title}</h3>
-  //                <hr>
-  //                <p class="sentence">${blogs[1].content}</p>
+}
 
-  //                <p>Posted By: <span>${blogs[1].username}</span></p>
-  //           </article>`
-
+function goBack() {
+  window.history.back()
 }
 
 loadBlogs();

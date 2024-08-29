@@ -3,7 +3,7 @@ const nameUser = document.querySelector('#nameUser');
 const title = document.querySelector('#title');
 const content = document.querySelector('#content');
 
-let registers = [];
+const registers = [];
 let isForm = false;
 
 signUpButton.addEventListener('click', function (event) {
@@ -22,11 +22,12 @@ signUpButton.addEventListener('click', function (event) {
         console.log("registers",registers);
         
         localStorage.setItem("users", JSON.stringify(registers));
-        document.location.replace("blog.html");
 
-        // window.location.href = "blog.html";
+        window.location.href = "blog.html";
         // document.location.replace("blog.html");
     }
+    // document.location.replace("blog.html");
+    cleanForm();
 });
 
 function validation(register) {
@@ -45,4 +46,9 @@ function validation(register) {
     }
 
     return isForm;
+}
+
+function cleanForm(){
+    document.getElementById("myForm").reset();
+
 }
