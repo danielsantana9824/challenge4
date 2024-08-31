@@ -3,7 +3,7 @@ const nameUser = document.querySelector('#nameUser');
 const title = document.querySelector('#title');
 const content = document.querySelector('#content');
 
-const registers = [];
+const registers = JSON.parse (localStorage.getItem("users"))|| [] ;
 let isForm = false;
 
 signUpButton.addEventListener('click', function (event) {
@@ -19,12 +19,9 @@ signUpButton.addEventListener('click', function (event) {
 
     if (alert) {
         registers.push(register);
-        console.log("registers",registers);
-        
         localStorage.setItem("users", JSON.stringify(registers));
-
-        window.location.href = "blog.html";
-        // document.location.replace("blog.html");
+        console.log(registers);
+        document.location.replace("blog.html");
     }
     // document.location.replace("blog.html");
     cleanForm();
@@ -50,5 +47,4 @@ function validation(register) {
 
 function cleanForm(){
     document.getElementById("myForm").reset();
-
 }
