@@ -13,7 +13,7 @@
 header {
   display: flex;
   justify-content: flex-end;
-  border-bottom: 2px solid var(--linevar(--lineBlack));
+  border-bottom: 2px solid var(--lineWhite);
   margin-bottom: 0.5%;
 }
 
@@ -29,11 +29,26 @@ header {
   color: var(--lineWhite);
 }
 
+.dark header {
+  border-bottom: 2px solid var(--lineWhite);
+  margin-bottom: 0.5%;
+}
+
+.dark section.left{
+  margin-right: 5px;
+  border-right: var(--borderLine) solid var(--lineWhite); 
+}
+
+.dark section.right{
+  padding-left: 0.5%;
+  border-left: var(--borderLine) solid var(--lineWhite);
+}
+
 .dark label{
   color: white;
 }
 .dark main{
-  border-top: var(--borderLine) solid var(--colorLine);
+  border-top: var(--borderLine) solid var(--lineWhite);
 }
 
 .dark main article {

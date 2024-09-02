@@ -11,7 +11,7 @@
 
 header {
   width: 100%;
-  padding: 35px;
+  padding: 15px;
   border-bottom: var(--borderLine) solid var(--colorLine);
 }
 
@@ -35,7 +35,6 @@ main {
   display: flex;
   width: 100%;
   height: auto;
-  margin-top: 1%;
   border-top: var(--borderLine) solid var(--colorLine);
 }
 
@@ -45,12 +44,14 @@ main {
 }
 
 .left {
-  border-right: var(--borderLine) solid var(--colorLine);
+  margin-right: 5px;
+  border-right: var(--borderLine) solid var(--colorLine); 
   height: 100%;
 }
 
 .right {
   padding-left: 0.5%;
+  border-left: var(--borderLine) solid var(--colorLine); 
 }
 
 .line {
