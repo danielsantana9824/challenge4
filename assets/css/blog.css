@@ -1,11 +1,54 @@
+:root {
+   --borderLine: 3px;
+   --colorLine: black;
+}
+
+body {
+   border-right: var(--borderLine) solid var(--colorLine);
+}
+
+header {
+   display: flex;
+   justify-content: flex-end;
+   border-bottom: var(--borderLine) solid var(--colorLine);
+   margin-bottom: 0.5%;
+   width: 100%;
+   padding: 15px;
+}
+
+nav {
+   height: 100%;
+   width: 50%;
+   display: flex;
+   justify-content: end;
+   padding-right: 3%;
+   padding-top: 1%;
+}
+
+h1 {
+   height: 100%;
+   width: 50%;
+   padding-left: 3%;
+}
+
+main {
+   border-top: var(--borderLine) solid var(--colorLine);
+   border-bottom: var(--borderLine) solid var(--colorLine);
+}
+
 main article {
    padding: 2%;
 }
 
 main article {
-   height: 30vh;
-   border: 1px solid rgb(146, 7, 7);
+   height: 30%;
    margin: 2%;
+   background-color: gainsboro;
+   border: var(--borderLine) solid var(--colorLine);
+}
+
+h3 {
+   border-bottom: var(--borderLine) solid var(--colorLine);
 }
 
 .sentence {
@@ -14,7 +57,9 @@ main article {
 }
 
 footer {
-   border: 2px solid black;
+   margin-top: 0.5%;
+   border-top: var(--borderLine) solid var(--colorLine);
+   border-bottom: var(--borderLine) solid var(--colorLine);
 }
 
 footer h4 {

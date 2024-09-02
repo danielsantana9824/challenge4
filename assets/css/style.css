@@ -1,4 +1,4 @@
-:root{
+:root {
   --lineBlack: black;
   --lineWhite: white;
   --borderLine: 3px;
@@ -10,13 +10,6 @@
   box-sizing: border-box;
 }
 
-header {
-  display: flex;
-  justify-content: flex-end;
-  border-bottom: 2px solid var(--lineWhite);
-  margin-bottom: 0.5%;
-}
-
 #theme {
   width: 1.5%;
   margin: 1%;
@@ -25,51 +18,55 @@ header {
 /* Dark Mode */
 .dark {
   background-color: #243447;
-  height: 100vh;
+  height: 100%;
   color: var(--lineWhite);
 }
 
+body .dark{
+  border-right: var(--borderLine) solid var(--lineWhite);
+}
+
 .dark header {
-  border-bottom: 2px solid var(--lineWhite);
+  border-bottom: var(--borderLine) solid var(--lineWhite);
   margin-bottom: 0.5%;
 }
 
-.dark section.left{
-  margin-right: 5px;
-  border-right: var(--borderLine) solid var(--lineWhite); 
+.dark main article {
+  height: 30%;
+  margin: 2%;
+  background-color: aliceblue;
+  color: #243447;
+  border: var(--borderLine) solid rgb(127, 168, 205);
 }
 
-.dark section.right{
+.dark section.left {
+  margin-right: 5px;
+  border-right: var(--borderLine) solid var(--lineWhite);
+}
+
+.dark section.right {
   padding-left: 0.5%;
   border-left: var(--borderLine) solid var(--lineWhite);
 }
 
-.dark label{
+.dark label {
   color: white;
 }
-.dark main{
-  border-top: var(--borderLine) solid var(--lineWhite);
-}
 
-.dark main article {
-  border: 1px solid var(--lineWhite);
+.dark main {
+  border-top: var(--borderLine) solid var(--lineWhite);
+  border-bottom: var(--borderLine) solid var(--lineWhite);
 }
 
 .dark footer {
-  border: 2px solid var(--lineWhite);
+  margin-top: 0.5%;
+  border-top: var(--borderLine) solid var(--lineWhite);
+  border-bottom: var(--borderLine) solid var(--lineWhite);
 }
 
 /* Light Mode*/
 .light {
   background-color: #f0ead6;
   color: var(--lineBlack);
-  height: 100vh;
-}
-
-.light main article {
-  border: 1px solid var(--lineBlack);
-}
-
-.light footer {
-  border: 2px solid var(--lineBlack);
+  height: 100%;
 }

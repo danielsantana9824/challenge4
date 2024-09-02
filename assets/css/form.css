@@ -10,6 +10,9 @@
 }
 
 header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.5%;
   width: 100%;
   padding: 15px;
   border-bottom: var(--borderLine) solid var(--colorLine);
@@ -52,12 +55,6 @@ main {
 .right {
   padding-left: 0.5%;
   border-left: var(--borderLine) solid var(--colorLine); 
-}
-
-.line {
-  padding-left: 0.5%;
-  height: 100%;
-  border-left: var(--borderLine) solid var(--colorLine);
 }
 
 section a img {
